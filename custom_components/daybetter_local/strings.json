@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "DayBetter · API local",
+        "description": "Buscando tiras DayBetter en tu red local (UDP 6281). Si no aparece ninguna, activa la \"API local\" en la app DayBetter y pulsa Enviar para volver a escanear. También puedes escribir la IP de la tira para forzar la búsqueda.",
+        "data": {
+          "ip": "IP de la tira (opcional)"
+        }
+      },
+      "pick": {
+        "title": "Elige la tira",
+        "description": "Dispositivos encontrados: {count}",
+        "data": {
+          "ip": "Dispositivo",
+          "name": "Nombre en Home Assistant"
+        }
+      }
+    },
+    "error": {
+      "no_devices": "No se encontró ninguna tira DayBetter con la API local activada."
+    },
+    "abort": {
+      "already_configured": "Ese dispositivo ya está configurado."
+    }
+  }
+}

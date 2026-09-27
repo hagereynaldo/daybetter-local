@@ -1,0 +1,14 @@
+{
+  "domain": "daybetter_local",
+  "name": "DayBetter Local (LAN)",
+  "version": "1.0.0",
+  "documentation": "https://github.com/hagereynaldo/daybetter-local",
+  "issue_tracker": "https://github.com/hagereynaldo/daybetter-local/issues",
+  "codeowners": ["@hagereynaldo"],
+  "requirements": [],
+  "dependencies": ["network"],
+  "iot_class": "local_polling",
+  "config_flow": true,
+  "integration_type": "device",
+  "platforms": ["light"]
+}

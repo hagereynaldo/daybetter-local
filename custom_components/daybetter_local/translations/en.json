@@ -1,0 +1,27 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "DayBetter · Local API",
+        "description": "Scanning your local network for DayBetter strips (UDP 6281). If none shows up, enable the \"Local API\" in the DayBetter app and press Submit to scan again. You can also type the strip IP to force the search.",
+        "data": {
+          "ip": "Strip IP (optional)"
+        }
+      },
+      "pick": {
+        "title": "Pick the strip",
+        "description": "Devices found: {count}",
+        "data": {
+          "ip": "Device",
+          "name": "Name in Home Assistant"
+        }
+      }
+    },
+    "error": {
+      "no_devices": "No DayBetter strip with the local API enabled was found."
+    },
+    "abort": {
+      "already_configured": "That device is already configured."
+    }
+  }
+}
